@@ -1,2 +1,5 @@
 *.iml
 .idea
+vendor
+.bundle
+_site
