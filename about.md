@@ -17,10 +17,10 @@ We try to slow that process through conventions, reviews, migrations and documen
 
 Coming back to a project only a few months later often means reconstructing an entire mental model:
 
-• How is the application structured?
-• How does it fit into the larger system?
-• What conventions does it follow?
-• How outdated are its dependencies?
+* How is the application structured?
+* How does it fit into the larger system?
+* What conventions does it follow?
+* How outdated are its dependencies?
 
 This is why I believe software should explain itself as much as possible. Architecture should be enforced by executable rules rather than informal agreements. Documentation should stay close to the code and evolve with it, instead of becoming a disconnected artifact that slowly loses its value.
 
