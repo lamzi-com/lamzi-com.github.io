@@ -1,0 +1,39 @@
+main {
+    padding-top: 2rem;
+}
+
+.mermaid {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    overflow-x: auto;
+}
+
+.mermaid svg {
+    max-width: 100%;
+    height: auto;
+}
+
+pre {
+    padding: 1rem;
+    overflow-x: auto;
+    border-radius: 0.5rem;
+}
+
+pre code {
+    font-size: 0.9rem;
+}
+h1{
+    font-size: 1.5rem;
+}
+h2{
+    font-size: 1.2rem;
+}
+
+.site-title{
+    font-size: 2rem;
+}
+.site-description{
+    font-size: 1rem;
+    font-style: italic;
+}

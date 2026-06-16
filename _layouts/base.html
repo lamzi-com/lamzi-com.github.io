@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: site.title }}</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/syntax.css' | relative_url }}">
+</head>
+
+<body>
+<header class="container">
+    <nav>
+        <ul>
+            <li><span class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></span><br/><span
+                    class="site-description"> {{site.description}}</span></li>
+        </ul>
+        <ul>
+            <li><a href="{{ '/' | relative_url }}">Home</a></li>
+            <li><a href="{{ '/about' | relative_url }}">About</a></li>
+            <li><a href="{{ '/articles' | relative_url }}">Articles</a></li>
+            <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    {{ content }}
+</main>
+
+{% include mermaid.html %}
+
+</body>
+</html>
