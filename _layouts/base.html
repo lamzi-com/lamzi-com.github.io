@@ -3,8 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% feed_meta %}
+    {% seo %}
+
     <title>{{ page.title | default: site.title }}</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/syntax.css' | relative_url }}">
@@ -19,9 +23,9 @@
         </ul>
         <ul>
             <li><a href="{{ '/' | relative_url }}">Home</a></li>
-            <li><a href="{{ '/about' | relative_url }}">About</a></li>
             <li><a href="{{ '/articles' | relative_url }}">Articles</a></li>
-            <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+            <li><a href="{{ '/resources' | relative_url }}">Resources</a></li>
+            <li><a href="{{ '/about' | relative_url }}">About</a></li>
         </ul>
     </nav>
 </header>
@@ -31,6 +35,34 @@
 </main>
 
 {% include mermaid.html %}
+
+<hr/>
+<footer>
+        <ul>
+
+            <li>
+                <a href="https://github.com/lamzi-com" aria-label="GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.linkedin.com/in/sue-lambot-9915756/" aria-label="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:workshop@s.lamzi.com" aria-label="Email">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+            </li>
+            <li>
+                <a href="/feed.xml" aria-label="RSS Feed">
+                    <i class="bi bi-rss"></i>
+                </a>
+            </li>
+        </ul>
+</footer>
 
 </body>
 </html>

@@ -37,3 +37,52 @@ h2{
     font-size: 1rem;
     font-style: italic;
 }
+
+footer {
+    padding: 1rem 0;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+}
+
+footer a {
+    font-size: 1rem;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+footer a:hover {
+    opacity: 1;
+}
+
+.highlighter-rouge::before {
+    display: block;
+    font-size: 0.75rem;
+    opacity: 0.7;
+    margin-bottom: -1.5rem;
+    margin-right: .5rem;
+    text-align: right;
+}
+
+.language-python::before { content: "Python"; }
+.language-java::before { content: "Java"; }
+.language-javascript::before { content: "JavaScript"; }
+.language-bash::before { content: "Bash"; }
+.language-yaml::before { content: "YAML"; }
+.language-json::before { content: "JSON"; }
+.language-c::before { content: "C"; }
+.language-mermaid::before { content: "Mermaid"; }
+
